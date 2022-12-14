@@ -82,10 +82,12 @@ document.getElementById('btnEqual').addEventListener('click', function () {
         
         if(answerNumber >= 100) {
             answerField.innerText = `Я всегда угадываю\n\u{1F60E}`
-        } else if (answerNumber >= 50) {
+        } else if (answerNumber <= 50) {
             answerField.innerText = `Читаю мысли! \n\u{1F609}`
         } else if (answerNumber <=20) {
             answerField.innerText = `Ура, я нашёл ответ!\n\u{1F64B}`
+        } else {
+            answerField.innerText = "Опять угадал!"
         }
         gameRun = false;
     }
