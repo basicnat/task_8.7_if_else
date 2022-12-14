@@ -4,4 +4,4 @@
 
 ## Как открыть
 
-Ссылка на страницу("https://basicnat.github.io/task_8.7_if_else/")
+Ссылка на страницу["https://basicnat.github.io/task_8.7_if_else/"]
