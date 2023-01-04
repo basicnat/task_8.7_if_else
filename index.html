@@ -12,7 +12,7 @@
 <div class="container">
     <div class="row game-card align-items-center">
         <div class="col col-md-4 offset-md-4">
-            <div class="card text-center">
+            <!-- <div class="card text-center">
                 <div class="card-header">
                     <p class="m-0">Вопрос №<span id="orderNumberField">5</span></p>
                 </div>
@@ -24,19 +24,53 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <div class="btn-group">
-                        <button class="btn btn-info" id="btnLess">&#129047;<br>меньше</button>
-                        <button class="btn btn-success btn-lg" id="btnEqual">Верно!</button>
-                        <button class="btn btn-info" id="btnOver">больше<br>&#129045;</button>
+                    <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                        <button class="btn btn-light" id="btnLess">&#129047;<br>меньше</button>
+                        <button class="btn btn-dark btn-lg" id="btnEqual">Верно!</button>
+                        <button class="btn btn-light" id="btnOver">больше<br>&#129045;</button>
+                        <button class="btn btn-primary" id="btnRetry">Заново</button>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-link" id="btnRetry">Заново</button>
+            </div> -->
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md">
+                        <div class="card-header">
+                            <p class="card-title">Вопрос №<span id="orderNumberField">5</span></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="row g-0 ">
+                    <div class="col-md-8">
+                        <div class="card-body">                            
+                            <h3 class="card-text"><span id="answerField">Вы загадали число 5?</span></h3>
+                      
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                            <button class="btn btn-light" id="btnOver">больше<br>&#129045;</button>
+                            <button class="btn btn-light" id="btnLess">&#129047;<br>меньше</button>
+                            <button class="btn btn-dark btn-lg" id="btnEqual">Верно</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row g-0">
+                    <div class="col-md">
+                        <div class="card-footer">
+                            <button class="btn btn-primary" id="btnRetry">Заново</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
         </div>
     </div>
+
+    
 </div>
+
+
 <script src="script.js"></script>
 </body>
 </html>
