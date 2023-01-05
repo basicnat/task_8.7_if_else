@@ -28,7 +28,7 @@ function getQuestion() {
 
 document.getElementById('btnRetry').addEventListener('click', function () {
     minValue = parseInt(prompt('Минимальное число для игры')) || 0;
-    maxValue = parseInt(prompt('Максимальное число для игры') || 100;
+    maxValue = parseInt(prompt('Максимальное число для игры')) || 100;
     alert(`Загадайте любое целое число от ${minValue} до ${maxValue}, а я его угадаю`);
     answerNumber = Math.floor((minValue + maxValue) / 2);
     orderNumberField.innerText = orderNumber = 1;
